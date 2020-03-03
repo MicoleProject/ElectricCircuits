@@ -1,0 +1,34 @@
+ DEF ptA Node { position -0.08  0.05  0 } 
+ DEF ptB Node { position  0.08  0.05  0 }
+ DEF ptC Node { position  0.08 -0.05  0 }
+ DEF ptD Node { position -0.08 -0.05  0 }
+ DEF ptE Node { position  0.00  0.05  0 }
+ DEF ptF Node { position  0.00 -0.05  0 }
+ Line {
+ 	begin "ptA"
+ 	end "ptE"
+ }
+ Line {
+ 	begin "ptE"
+ 	end "ptB"
+ }
+ Lamp {
+ 	begin "ptB"
+ 	end "ptC"
+ }
+ Line {
+ 	begin "ptC"
+ 	end "ptF"
+ }
+ Line {
+ 	begin "ptF"
+ 	end "ptD"
+ }
+ Battery {
+ 	begin "ptD"
+ 	end "ptA"
+ }
+ Resistor {
+ 	begin "ptE"
+ 	end "ptF"
+ }

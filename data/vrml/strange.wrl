@@ -1,0 +1,57 @@
+ DEF ptA Node { position -0.06  0.06  0 } 
+ DEF ptB Node { position  0.06  0.06  0 }
+ DEF ptC Node { position  0.06 -0.06  0 }
+ DEF ptD Node { position -0.06 -0.06  0 }
+ DEF ptE Node { position  0.00  0.06  0 } 
+ DEF ptF Node { position  0.06  0.00  0 }
+ DEF ptG Node { position  0.00 -0.06  0 }
+ DEF ptH Node { position -0.06  0.00  0 }
+ DEF ptI Node { position  0.00  0.00  0 }
+ Line {
+ 	begin "ptA"
+ 	end "ptE"
+ }
+ Line {
+ 	begin "ptE"
+ 	end "ptB"
+ }
+ Line {
+ 	begin "ptB"
+ 	end "ptF"
+ }
+ Line {
+ 	begin "ptF"
+ 	end "ptC"
+ }
+ Line {
+ 	begin "ptC"
+ 	end "ptG"
+ }
+ Line {
+ 	begin "ptG"
+ 	end "ptD"
+ }
+ Line {
+ 	begin "ptD"
+ 	end "ptH"
+ }
+ Line {
+ 	begin "ptH"
+ 	end "ptA"
+ }
+ Line {
+ 	begin "ptE"
+ 	end "ptI"
+ }
+ Line {
+ 	begin "ptF"
+ 	end "ptI"
+ }
+ Line {
+ 	begin "ptG"
+ 	end "ptI"
+ }
+ Line {
+ 	begin "ptH"
+ 	end "ptI"
+ }
